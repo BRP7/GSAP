@@ -4,3 +4,12 @@ gsap.from("#nav .nav-part1 ,#nav .nav-part2 .c1,#nav .nav-part2 .c2,#nav .nav-pa
     delay:0.5,
     stagger: 0.1, 
 })
+gsap.from(".scroll",{
+    y:-100,
+    duration:1,
+    delay:0.5,
+    stagger: 0.1, 
+    repeat:-1,
+    repeatDelay: 1,
+    yoyo:true
+})

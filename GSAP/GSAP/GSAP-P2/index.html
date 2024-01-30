@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      /* background-color: black; */
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      border: 2px solid black;
+      text-align: center;
+      line-height: 200px;
+      font-size: 18px;
+    }
+    #page1{background-color: black;}
+    #page2{background-color: rgb(21, 20, 20);}
+    #page3{background-color: rgb(10, 10, 10);}
+
+    #page1 .box {
+      background-color: #333;
+      color: white;
+    }
+
+    #page2 .box {
+      background-color: #555;
+      color: white;
+    }
+
+    #page3 .box {
+      background-color: #777;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="page1" class="container">
+    <div class="box">Page 1</div>
+  </div>
+
+  <div id="page2" class="container">
+    <div class="box">Page 2</div>
+  </div>
+
+  <div id="page3" class="container">
+    <div class="box">Page 3</div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+</html>

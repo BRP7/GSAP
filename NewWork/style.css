@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "freight big pro";
+    /* box-sizing: border-box; */
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+html,body{
+    width: 100%;
+    height:100%;
+    box-sizing: border-box;
+}
+#loader{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.995);
+    position: fixed;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 9;
+    /* display: none; */
+}
+#yellow1{
+    width: 100%;
+    height: 100%;
+    background-color: #F5E41B;
+    position: absolute;
+    z-index: 8;
+}
+#nav{
+    position: absolute;
+    width: 100%;
+    /* background-color: blueviolet; */
+    z-index: 10;
+    padding: 20px 35px;
+}
+#main{
+    background-color: #000000;
+}
+#nav svg path{
+    fill: #000000;
+
+}
+#yellow2{
+    width: 100%;
+    height: 100%;
+    background-color: #F5E41B;
+    position: absolute;
+    z-index: 7;
+}
+#loader video{
+    height:100%;
+    width:100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 6;
+}
+
+#loader h1{
+    z-index: 9;
+    position: relative;
+    font-size: 13vh;
+    line-height: 10vh;
+    font-weight: 100;
+    letter-spacing: -3px;
+}
+#page1{
+    height: 100vh;
+    width:100%;
+    background-color: #F5E41B;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#page1 h1{
+    font-size: 13vh;
+    line-height: 10vh;
+    font-weight: 100;
+    letter-spacing: -3px;
+}
+#page2{
+    height: 100vh;
+    width:100%;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+.elem{
+    /* height: 100%; */
+    width:100%;
+    /* background-color:#000000; */
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    /* padding-bottom: 0; */
+    /* line-height: -60px; */
+   
+}
+.elem .moving {
+    width: 100%;
+    background-color: #F5E41B;
+    white-space: nowrap;
+    padding: 1px 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    transform: translate(0,-45%) scaleY(0);
+    transition: all ease 0.3s;
+    /* z-index: 7; */
+    overflow: hidden;
+}
+.elem .blur{
+    position: absolute;
+    width: 33%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(to right,#fff049,#F5E41B,#fff04d);
+    box-shadow: 0px 0px 6px 6px #F5E41B,-10px 0px 6px 10px #F5E41B;
+    height: 0.2%;
+    z-index: 8;
+}
+
+.elem:hover .moving {
+    transform: translate(0,-45%) scaleY(1);
+    cursor: pointer;
+}
+.elem:hover .moving .moving-in  h5{
+    opacity: 1;
+}
+.elem:hover h2{
+    font-style: italic;
+}
+.elem .moving .moving-in{
+    /* position: relative; */
+    display: inline-block;
+    white-space: nowrap;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    animation-name: moving;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#page2 .elem h2{
+    font-size: 9vh;
+    /* font-weight:-100; */
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: -2px;
+    z-index: 9;
+    text-transform: uppercase;
+    position: relative;
+    font-size: normal;
+    /* line-height: -50vh; */
+}
+.elem .moving .moving-in h5{
+    opacity: 0;
+    /* transition-delay: 0.2s; */
+    display: inline-block;
+    white-space: nowrap;
+    margin-right: 30px;
+    /* position: absolute; */
+    top: 50%;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #000000;
+    transition: all ease 0.3s;
+    transition-delay:0.2s ;
+}
+@keyframes moving{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#page3{
+    height: 100vh;
+    width:100%;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}

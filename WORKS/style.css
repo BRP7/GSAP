@@ -20,8 +20,8 @@ html,body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    z-index: 99;
-    display: none;
+    z-index: 9;
+    /* display: none; */
 }
 #yellow1{
     width: 100%;
@@ -93,6 +93,8 @@ html,body{
     align-items: center;
     justify-content: center;
     text-align: center; 
+    background-size: cover;
+    background-position: center;
 }
 
 .elem{
@@ -116,7 +118,7 @@ html,body{
     padding: 1px 0;
     position: absolute;
     top: 50%;
-    transform: translate(0,-50%);
+    /* transform: translate(0,-50%); */
     transform: translate(0,-45%) scaleY(0);
     transition: all ease 0.3s;
     /* z-index: 7; */

@@ -235,8 +235,230 @@ gsap.from(".elem", {
 // });
 
 
-window.onload = function() {
-    console.log("Window loaded!");
+// window.onload = function() {
+//     console.log("Window loaded!");
+
+//     function loading() {
+//         console.log("Loading function started");
+//         var t1 = gsap.timeline();
+
+//         t1.to("#yellow1", {
+//             top: "-100%",
+//             delay: 0.5,
+//             duration: 1,
+//             ease: "expo.out"
+//         });
+
+//         t1.from("#loader #yellow2", {
+//             top: "100%",
+//             delay: 0.5,
+//             duration: 0.5,
+//             ease: "expo.out"
+//         }, "anim");
+
+//         t1.to("#loader h1", {
+//             color: "black",
+//             duration: 0.5,
+//             delay: 0.5
+//         }, "anim");
+
+//         t1.to("#loader", {
+//             opacity: 0,
+//         });
+
+//         console.log("Loading function completed");
+//     }
+
+//     loading();
+
+//     const scroll = new LocomotiveScroll({
+//         el: document.querySelector('#main'),
+//         smooth: true
+//     });
+
+//     let elem = document.querySelectorAll(".elem");
+//     let page2 = document.querySelector("#page2");
+
+//     elem.forEach((elem) => {
+//         elem.addEventListener("mouseenter", function () {
+//             let bgimg = elem.getAttribute("data-img");
+//             console.log(bgimg);
+//             page2.style.backgroundImage = `url(${bgimg})`;
+//         })
+//     });
+
+//     console.log("Animation applied!");
+// };
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     console.log("DOM content loaded!");
+
+//     function loading() {
+//         console.log("Loading function started");
+//         var t1 = gsap.timeline();
+
+//         t1.to("#yellow1", {
+//             top: "-100%",
+//             delay: 0.5,
+//             duration: 1,
+//             ease: "expo.out"
+//         });
+
+//         t1.from("#loader #yellow2", {
+//             top: "100%",
+//             delay: 0.5,
+//             duration: 0.5,
+//             ease: "expo.out"
+//         }, "anim");
+
+//         t1.to("#loader h1", {
+//             color: "black",
+//             duration: 0.5,
+//             delay: 0.5
+//         }, "anim");
+
+//         t1.to("#loader", {
+//             opacity: 0,
+//         });
+
+//         console.log("Loading function completed");
+//     }
+
+//     loading();
+
+//     const scroll = new LocomotiveScroll({
+//         el: document.querySelector('#main'),
+//         smooth: true
+//     });
+
+//     let elem = document.querySelectorAll(".elem");
+//     let page2 = document.querySelector("#page2");
+
+//     elem.forEach((elem) => {
+//         elem.addEventListener("mouseenter", function () {
+//             let bgimg = elem.getAttribute("data-img");
+//             console.log("Mouse entered .elem. Image URL:", bgimg);
+//             page2.style.backgroundImage = `url(${bgimg})`;
+//         });
+//     });
+
+//     console.log("Animation applied!");
+// });
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     console.log("DOM content loaded!");
+
+//     function loading() {
+//         console.log("Loading function started");
+//         var t1 = gsap.timeline();
+
+//         t1.to("#yellow1", {
+//             top: "-100%",
+//             delay: 0.5,
+//             duration: 1,
+//             ease: "expo.out"
+//         });
+
+//         t1.from("#loader #yellow2", {
+//             top: "100%",
+//             delay: 0.5,
+//             duration: 0.5,
+//             ease: "expo.out"
+//         }, "anim");
+
+//         t1.to("#loader h1", {
+//             color: "black",
+//             duration: 0.5,
+//             delay: 0.5
+//         }, "anim");
+
+//         t1.to("#loader", {
+//             opacity: 0,
+//         });
+
+//         console.log("Loading function completed");
+//     }
+
+//     loading();
+
+//     const scroll = new LocomotiveScroll({
+//         el: document.querySelector('#main'),
+//         smooth: true
+//     });
+
+//     document.addEventListener("mouseenter", function (event) {
+//         const target = event.target;
+//         if (target.classList.contains("elem")) {
+//             let bgimg = target.getAttribute("data-img");
+//             console.log("Mouse entered .elem. Image URL:", bgimg);
+//             document.querySelector("#page2").style.backgroundImage = `url(${bgimg})`;
+//         }
+//     });
+
+//     console.log("Animation applied!");
+// });
+
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     console.log("DOM content loaded!");
+
+//     function loading() {
+//         console.log("Loading function started");
+//         var t1 = gsap.timeline();
+
+//         t1.to("#yellow1", {
+//             top: "-100%",
+//             delay: 0.5,
+//             duration: 1,
+//             ease: "expo.out"
+//         });
+
+//         t1.from("#loader #yellow2", {
+//             top: "100%",
+//             delay: 0.5,
+//             duration: 0.5,
+//             ease: "expo.out"
+//         }, "anim");
+
+//         t1.to("#loader h1", {
+//             color: "black",
+//             duration: 0.5,
+//             delay: 0.5
+//         }, "anim");
+
+//         t1.to("#loader", {
+//             opacity: 0,
+//         });
+
+//         console.log("Loading function completed");
+//     }
+
+//     loading();
+
+//     const scroll = new LocomotiveScroll({
+//         el: document.querySelector('#main'),
+//         smooth: true
+//     });
+
+//     const container = document.querySelector(".elem"); // Replace with the actual container element
+//     container.addEventListener("mouseenter", function (event) {
+//         const target = event.target;
+//         if (target && target.classList.contains("elem")) {
+//             let bgimg = target.getAttribute("data-img");
+//             console.log("Mouse entered .elem. Image URL:", bgimg);
+//             document.querySelector("#page2").style.backgroundImage = `url(${bgimg})`;
+//         }
+//     });
+
+//     console.log("Animation applied!");
+// });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    console.log("DOM content loaded!");
 
     function loading() {
         console.log("Loading function started");
@@ -276,16 +498,15 @@ window.onload = function() {
         smooth: true
     });
 
-    let elem = document.querySelectorAll(".elem");
-    let page2 = document.querySelector("#page2");
+    const elemList = document.querySelectorAll(".elem");
 
-    elem.forEach((elem) => {
+    elemList.forEach((elem) => {
         elem.addEventListener("mouseenter", function () {
             let bgimg = elem.getAttribute("data-img");
-            console.log(bgimg);
-            page2.style.backgroundImage = `url(${bgimg})`;
-        })
+            console.log("Mouse entered .elem. Image URL:", bgimg);
+            document.querySelector("#page2").style.backgroundImage = `url(${bgimg})`;
+        });
     });
 
     console.log("Animation applied!");
-};
+});

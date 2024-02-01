@@ -120,62 +120,172 @@ gsap.from(".elem", {
             // console.log("Animation applied!");
 
             */
-           document.addEventListener('DOMContentLoaded', () => {
+//            document.addEventListener('DOMContentLoaded', () => {
           
-    // Your script code here
-    console.log("Script is running!");
+//     // Your script code here
+//     console.log("Script is running!");
+//     function loading() {
+//     var t1=gsap.timeline();
+    
+//     t1.to("#yellow1",{
+//         top:"-100%",
+//         delay:0.5,
+//         duration:1,
+//         ease:"expo.out"
+//     })
+//     t1.from("#loader #yellow2",{
+//         top:"100%",
+//         delay:0.5,
+//         duration:0.5,
+//         ease:"expo.out"
+//     },"anim")
+//     t1.to("#loader h1",{
+//         color:"black",
+//         duration:0.5,
+//         delay:0.5
+//     },"anim")
+//     t1.to("#loader",{
+//         opacity:0,
+    
+//     }) 
+//     // t1.to("#loader",{
+//     //     display:none,
+    
+//     // }) 
+// }
+// loading();
+
+//     const scroll = new LocomotiveScroll({
+//         el: document.querySelector('#main'),
+//         smooth: true
+//     });
+    
+//     let elem=document.querySelectorAll(".elem");
+//     let page2=document.querySelector("#page2");
+//     elem.forEach((elem)=>{
+//         elem.addEventListener("mouseenter",function () {
+//             let bgimg =elem.getAttribute("data-img");
+//             console.log(bgimg);
+//             page2.style.backgroundImage=`url(${bgimg})`;
+//         })
+//     })
+
+//     // gsap.to('.moving', {
+//     //     y: 100,
+//     // });
+
+//     console.log("Animation applied!");
+
+    
+// });
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     console.log("Script is running!");
+
+//     function loading() {
+//         console.log("Loading function started");
+//         var t1 = gsap.timeline();
+
+//         t1.to("#yellow1", {
+//             top: "-100%",
+//             delay: 0.5,
+//             duration: 1,
+//             ease: "expo.out"
+//         });
+
+//         t1.from("#loader #yellow2", {
+//             top: "100%",
+//             delay: 0.5,
+//             duration: 0.5,
+//             ease: "expo.out"
+//         }, "anim");
+
+//         t1.to("#loader h1", {
+//             color: "black",
+//             duration: 0.5,
+//             delay: 0.5
+//         }, "anim");
+
+//         t1.to("#loader", {
+//             opacity: 0,
+//         });
+
+//         console.log("Loading function completed");
+//     }
+
+//     loading();
+
+//     const scroll = new LocomotiveScroll({
+//         el: document.querySelector('#main'),
+//         smooth: true
+//     });
+
+//     let elem = document.querySelectorAll(".elem");
+//     let page2 = document.querySelector("#page2");
+
+//     elem.forEach((elem) => {
+//         elem.addEventListener("mouseenter", function () {
+//             let bgimg = elem.getAttribute("data-img");
+//             console.log(bgimg);
+//             page2.style.backgroundImage = `url(${bgimg})`;
+//         })
+//     });
+
+//     console.log("Animation applied!");
+// });
+
+
+window.onload = function() {
+    console.log("Window loaded!");
+
     function loading() {
-    var t1=gsap.timeline();
-    
-    t1.to("#yellow1",{
-        top:"-100%",
-        delay:0.5,
-        duration:1,
-        ease:"expo.out"
-    })
-    t1.from("#loader #yellow2",{
-        top:"100%",
-        delay:0.5,
-        duration:0.5,
-        ease:"expo.out"
-    },"anim")
-    t1.to("#loader h1",{
-        color:"black",
-        duration:0.5,
-        delay:0.5
-    },"anim")
-    t1.to("#loader",{
-        opacity:0,
-    
-    }) 
-    // t1.to("#loader",{
-    //     display:none,
-    
-    // }) 
-}
-loading();
+        console.log("Loading function started");
+        var t1 = gsap.timeline();
+
+        t1.to("#yellow1", {
+            top: "-100%",
+            delay: 0.5,
+            duration: 1,
+            ease: "expo.out"
+        });
+
+        t1.from("#loader #yellow2", {
+            top: "100%",
+            delay: 0.5,
+            duration: 0.5,
+            ease: "expo.out"
+        }, "anim");
+
+        t1.to("#loader h1", {
+            color: "black",
+            duration: 0.5,
+            delay: 0.5
+        }, "anim");
+
+        t1.to("#loader", {
+            opacity: 0,
+        });
+
+        console.log("Loading function completed");
+    }
+
+    loading();
 
     const scroll = new LocomotiveScroll({
         el: document.querySelector('#main'),
         smooth: true
     });
-    
-    let elem=document.querySelectorAll(".elem");
-    let page2=document.querySelector("#page2");
-    elem.forEach((elem)=>{
-        elem.addEventListener("mouseenter",function () {
-            let bgimg =elem.getAttribute("data-img");
-            console.log(bgimg);
-            page2.style.backgroundImage=`url(${bgimg})`;
-        })
-    })
 
-    // gsap.to('.moving', {
-    //     y: 100,
-    // });
+    let elem = document.querySelectorAll(".elem");
+    let page2 = document.querySelector("#page2");
+
+    elem.forEach((elem) => {
+        elem.addEventListener("mouseenter", function () {
+            let bgimg = elem.getAttribute("data-img");
+            console.log(bgimg);
+            page2.style.backgroundImage = `url(${bgimg})`;
+        })
+    });
 
     console.log("Animation applied!");
-
-    
-});
-
+};

@@ -2,6 +2,10 @@
     font-family: nb;
     src: url(./NBInternationalProBoo.ttf);
 }
+@font-face {
+    font-family: rejouiceF;
+    src: url(./Rejouice-Headline.ttf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -29,6 +33,11 @@ body{
     width:100%;
     position: relative;
     z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    /* padding-bottom: 1vh; */
 }
 nav{
     display: flex;
@@ -36,12 +45,20 @@ nav{
     justify-content: space-between;
     padding: 2vw 3vw;
     width: 100%;
-    background-color: rgb(49, 49, 39);
+    font-family: nb;
+    /* background-color: rgb(49, 49, 39); */
 }
 nav h3{
     font-size: 1.2vw;
-    font-weight: 40;
+    font-weight: 10;
 }
 nav h4{
     font-size: 1vw;
+    font-weight: 10;
+}
+.page-content h1{
+    font-size: 21vw;
+ font-family: rejouiceF;
+ font-weight: 100;
+ line-height: 30vh;
 }

@@ -86,5 +86,31 @@ nav h4{
 .page2{
     height: 100vh;
     width: 100%;
-    background-color: #fcdcab;
+    background-color: #000000;
+}
+.line{
+    border-bottom: 1px solid gray;
+    /* margin: 9vh; */
+    margin: 9vh 0;
+}
+.elem{
+    /* padding: 20vw; */
+    margin: 1vh 1.3vw;
+    justify-content: center;
+    padding: 0vh 2vw;
+    /* text-align: justify; */
+}
+.sidediv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 9vh;
+}
+.sidediv h6{
+    font-weight: 30;
+}
+.elem h1{
+ 
+    font-weight: 100;
+
 }

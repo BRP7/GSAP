@@ -27,7 +27,7 @@ pageCon.addEventListener("mouseleave",function(){
 }
 cursorEffect();
 
-gsap.from(".elem h1",{
+gsap.from(".elem h1,.elem .sidediv h6,.elem .line",{
     y:120,
     stagger:0.2,
     duration:1,

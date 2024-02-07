@@ -155,10 +155,21 @@ nav h4{
     height: 100%;
     width: 32.4%;
     /* background-color: aqua; */
+    position: relative;
 }
 .page3-element .box video{
     height: 100%;
     width:100%;
     object-fit: cover;
     object-position: center;
+}
+.page3-element .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 1s;
+}
+.page3-element .box:hover img{
+    opacity: 0;
 }

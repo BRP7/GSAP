@@ -20,8 +20,25 @@ body{
     height: 100vh;
     width: 100%;
     position: relative;
-}
 
+}
+.cursor{
+    position: fixed;
+    z-index: 9;
+    height: 13vh;
+    width: 6.5vw;
+    background-color:  #ff5f38 ;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+}
+.cursor h5{
+    color: #080808;
+    font-size: 1.8vh;
+    font-weight: 300;
+}
 .page1 video{
     height: 100%;
     width: 100%;
@@ -32,12 +49,13 @@ body{
     height: 100%;
     width:100%;
     position: relative;
-    z-index: 2;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
     /* padding-bottom: 1vh; */
+    /* transform: translate(-50%,-50%); */
 }
 nav{
     display: flex;
@@ -61,4 +79,7 @@ nav h4{
  font-family: rejouiceF;
  font-weight: 100;
  line-height: 30vh;
+}
+.page-content h1 span{
+    font-family: rejouiceF;
 }

@@ -20,3 +20,4 @@ t1.from("#main h1",{
     duration:0.5,
     scale:2
 })
+

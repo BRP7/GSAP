@@ -7,7 +7,7 @@ t1.to("#nav h2",{
     delay:1
 })
 
-t1.to("#nav h4",{
+t1.to("#nav #part2 h4",{
     y:30,
     opacity:1,
     duration:1,

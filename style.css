@@ -7,6 +7,27 @@
 html,body{
     height: 100%;
     width:100%;
+    background-color: black;
+    color: white;
 }
 
-#nav 
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+#nav #part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:30
+}
+
+h1{
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    transform:translate(-50%,-50%)
+}

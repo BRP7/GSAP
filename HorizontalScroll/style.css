@@ -49,5 +49,5 @@ html,body{
 #page2 h1{
     font-size:40vw;
     white-space: nowrap;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }

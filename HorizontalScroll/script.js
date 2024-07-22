@@ -21,3 +21,17 @@ t1.from("#main h1",{
     scale:2
 })
 
+gsap.to("#page2 h1",{
+    transform:"translate(-150%)",
+    scrollTrigger:{
+        trigger:"#page2",//tigger must be applied on parent
+        scroller:"body",
+        markers:true,
+        start:"top 0%",
+        end:"top -150%",
+        scrub:2,
+        pin:true
+    }
+    
+})
+

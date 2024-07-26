@@ -15,7 +15,7 @@ main.addEventListener("mousemove", function(event) {
         x: event.clientX,
         y: event.clientY,
         duration: 1,
-        ease: 'elastic.out(1,0.2)'
+        ease: 'power2.out' 
     });
 
 
@@ -25,7 +25,7 @@ main.addEventListener("mousemove", function(event) {
     if (elementBelowCursor.closest('#page1')) {
         cursor.style.backgroundColor = "#c7b4b4"; 
     } else if (elementBelowCursor.closest('#page2')) {
-        cursor.style.backgroundColor = "#726d6d";
+        cursor.style.backgroundColor = "#111";
     } else if (elementBelowCursor.closest('#page3')) {
         cursor.style.backgroundColor = "#c7b8b8"; 
     } else {

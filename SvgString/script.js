@@ -1,5 +1,6 @@
 var main = document.getElementById("main");
 var cursor = document.getElementById("cursor");
+var image = document.getElementById("img");
 
 // Calculate page boundaries
 var page1 = document.getElementById("page1");
@@ -14,7 +15,7 @@ main.addEventListener("mousemove", function(event) {
     gsap.to(cursor, {
         x: event.clientX,
         y: event.clientY,
-        duration: 1,
+        duration: 0.5,
         ease: 'power2.out' 
     });
 
@@ -32,3 +33,18 @@ main.addEventListener("mousemove", function(event) {
         cursor.style.backgroundColor = "#c7b4b4"; 
     }
 });
+
+image.addEventListener('mouseenter',function(){
+    cursor.innerHTML = "View More";
+    gsap.to(cursor,{
+        scale:2
+    }
+    )
+})
+image.addEventListener('mouseenter',function(){
+    cursor.innerHTML = "";
+    gsap.to(cursor,{
+        scale:1
+    }
+    )
+})

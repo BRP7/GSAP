@@ -21,6 +21,14 @@ html,body{
     background-color: #c7b4b4;
     border-radius: 50%;
     position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 5px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #nav{
@@ -44,6 +52,16 @@ html,body{
     /* margin-bottom: 20px; */
 }
 
+#overlay{
+    position: absolute;
+    background-color: beige;
+    color: #ffffff00;
+    opacity: 0;
+    z-index: 10;
+    height: 70vh;
+    width:75vw;
+
+}
 
 #page1 #main h1{
     position: absolute;
@@ -53,6 +71,7 @@ html,body{
     font-size: 80px;
     white-space: nowrap;
     color:#ffffff;
+    z-index: 11;
     /* opacity: 0.5; */
 }
 
@@ -62,6 +81,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 #image #img{

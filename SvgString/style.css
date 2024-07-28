@@ -52,6 +52,16 @@ html,body{
     /* margin-bottom: 20px; */
 }
 
+/* #page2 {
+    border: 2px solid red; /* Temporary border for debugging */
+    background-color: #c7b4b4; /* Ensure visibility */
+}
+
+#page3 {
+    border: 2px solid blue; /* Temporary border for debugging */
+    background-color: #c7b8b8; /* Ensure visibility */
+} */
+
 #overlay{
     position: absolute;
     background-color: beige;

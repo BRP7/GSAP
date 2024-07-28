@@ -92,14 +92,11 @@ main.addEventListener("mousemove", function(event) {
         cursor.style.backgroundColor = "#c7b4b4"; 
     } 
      if (elementBelowCursor.closest('#page2')) {
-        console.log(elementBelowCursor.closest('#page2'));
         cursor.style.backgroundColor = "#111";
     } 
      if (elementBelowCursor.closest('#page3')) {
         cursor.style.backgroundColor = "#c7b8b8"; 
-        console.log(elementBelowCursor.closest('#page3'));
     } else {
-        console.log("else");
         cursor.style.backgroundColor = "#c7b4b4"; 
     }
 });

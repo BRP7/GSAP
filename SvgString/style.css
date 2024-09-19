@@ -109,4 +109,5 @@ html,body{
     font-size:40vw;
     white-space: nowrap;
     /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
 }
